@@ -1,7 +1,7 @@
 var fs = require('fs');
 var file = process.argv[2];
 
-fs.readFile(file, function (err, contents) {
+fs.readFile(file, (err, contents) => {
   if (err) {
     return console.log(err);
   }

@@ -4,7 +4,7 @@ const path = require('path');
 const folder = process.argv[2];
 const ext = '.' + process.argv[3];
 
-fs.readdir(folder, function (err, list) {
+fs.readdir(folder, (err, list) => {
   if (err) {
     return console.log(err);
   }
