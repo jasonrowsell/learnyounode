@@ -1,10 +1,14 @@
-var fs = require('fs');
+var fs = require('fs').promises;
 var file = process.argv[2];
 
-fs.readFile(file, (err, contents) => {
-  if (err) {
-    return console.log(err);
+const lineCount = async (file) => {
+  try {
+    contents = await fs.readFile(file);
+    lines = contents.toString().split('\n').length - 1;
+    return console.log(lines);
+  } catch (e) {
+    return console.log(e);
   }
-  var lines = contents.toString().split('\n').length - 1;
-  console.log(lines);
-});
+};
+
+lineCount(file);
