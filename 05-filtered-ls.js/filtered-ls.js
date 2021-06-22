@@ -1,16 +1,19 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs').promises;
 
 const folder = process.argv[2];
 const ext = '.' + process.argv[3];
 
-fs.readdir(folder, (err, list) => {
-  if (err) {
-    return console.log(err);
-  }
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].includes(ext)) {
-      console.log(list[i]);
+const extCount = async (folder, ext) => {
+  try {
+    const data = await fs.readdir(folder);
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].includes(ext)) {
+        console.log(data[i]);
+      }
     }
+  } catch (e) {
+    console.log(e);
   }
-});
+};
+
+extCount(folder, ext);
