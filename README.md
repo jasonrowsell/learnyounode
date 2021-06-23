@@ -26,3 +26,19 @@ fix your npm permissions.
 6. *Create your solution for the exercise* by creating a new script file named "program.js" and following the instructions and hints that were printed out above for the lesson. For the "HELLO WORLD" lesson, your script "program.js" should have code in it that prints the text "HELLO WORLD" to stdout when run with Node.js (you can test your script file with Node.js by using the command: `node program.js`).
 7. *Verify that your solution to the lesson is correct* by running the command learnyounode verify program.js (note: if you named your script file something other than "program.js", replace "program.js" with the correct filename). If your solution is not correct, you will see a FAIL message along with some information about why your solution didn't pass the tests. In the case of a FAIL message, rework your solution until running the verify command passes. If your solution passes the tests, you should see a "PASS" message. Congratulations! :)
 8. *Move on to the next lesson if you have verified that your solution is correct.* Repeat these instructions from step 1 and select the next lesson that you would like to do (it is suggested to do the lessons in order from top to bottom).
+
+## Checklist
+
+- [x] [01-hello-world](01-hello-world)
+- [x] [02-baby-steps](02-baby-steps)
+- [x] [03-my-first-io](03-my-first-io)
+- [x] [04-my-first-async-io](04-my-first-async-io)
+- [x] [05-filtered-ls](05-filtered-ls)
+- [x] [06-make-it-modular](06-make-it-modular)
+- [x] [07-http-client](07-http-client)
+- [ ] [08-http-collect](08-http-collect)
+- [ ] [09-juggling-async](09-juggling-async)
+- [ ] [10-time-server](10-time-server)
+- [ ] [11-http-file-server](11-http-file-server)
+- [ ] [12-http-uppercaserer](12-http-uppercaserer)
+- [ ] [13-http-json-api-server](13-http-json-api-server)
