@@ -40,6 +40,6 @@ learnyounode is a Node.js package that contains a series of workshop lessons whi
 - [x] [08-http-collect](08-http-collect)
 - [x] [09-juggling-async](09-juggling-async)
 - [x] [10-time-server](10-time-server)
-- [ ] [11-http-file-server](11-http-file-server)
+- [x] [11-http-file-server](11-http-file-server)
 - [ ] [12-http-uppercaserer](12-http-uppercaserer)
 - [ ] [13-http-json-api-server](13-http-json-api-server)
